@@ -399,7 +399,7 @@ function ConclusionSection() {
             <ul className="space-y-3 text-zinc-300">
               <li className="flex items-start">
                 <CheckCircle className="w-5 h-5 text-yellow-400 mr-2 mt-1 flex-shrink-0" />
-                <span>You're building a small, simple project</span>
+                <span>You&apos;re building a small, simple project</span>
               </li>
               <li className="flex items-start">
                 <CheckCircle className="w-5 h-5 text-yellow-400 mr-2 mt-1 flex-shrink-0" />
@@ -417,7 +417,7 @@ function ConclusionSection() {
             <ul className="space-y-3 text-zinc-300">
               <li className="flex items-start">
                 <CheckCircle className="w-5 h-5 text-blue-500 mr-2 mt-1 flex-shrink-0" />
-                <span>You're building a large, complex application</span>
+                <span>You&apos;re building a large, complex application</span>
               </li>
               <li className="flex items-start">
                 <CheckCircle className="w-5 h-5 text-blue-500 mr-2 mt-1 flex-shrink-0" />
