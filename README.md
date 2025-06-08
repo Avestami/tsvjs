@@ -27,6 +27,7 @@ This project demonstrates key differences between TypeScript and JavaScript, hig
 - Interface and type definitions available in TypeScript
 - Enhanced IDE support and error checking with TypeScript
 - Compatibility between TypeScript and JavaScript
+- Better refactoring capabilities with TypeScript
 
 ## Learn More
 
