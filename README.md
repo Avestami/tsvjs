@@ -20,6 +20,14 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
+## TypeScript vs JavaScript
+
+This project demonstrates key differences between TypeScript and JavaScript, highlighting:
+- Strong typing in TypeScript vs dynamic typing in JavaScript
+- Interface and type definitions available in TypeScript
+- Enhanced IDE support and error checking with TypeScript
+- Compatibility between TypeScript and JavaScript
+
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:
