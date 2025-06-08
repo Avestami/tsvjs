@@ -354,18 +354,8 @@ const result = calculateTotal([
 
 function ConclusionSection() {
   return (
-    <section className="py-24 px-4 bg-gradient-to-b from-zinc-900 to-zinc-800 relative">
-      <motion.div
-        className="absolute inset-0 overflow-hidden opacity-20"
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 0.2 }}
-        transition={{ duration: 1 }}
-        viewport={{ once: true }}
-      >
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-blue-500/20 via-transparent to-transparent"></div>
-      </motion.div>
-
-      <div className="max-w-4xl mx-auto text-center relative z-10">
+    <section className="py-24 px-4 relative">
+      <div className="max-w-6xl mx-auto text-center">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -373,7 +363,7 @@ function ConclusionSection() {
           viewport={{ once: true, margin: "-100px" }}
           className="text-4xl md:text-5xl font-bold mb-8 bg-clip-text text-transparent bg-gradient-to-r from-zinc-100 to-zinc-400"
         >
-          Which One Should You Choose?
+          Choose the Right Tool
         </motion.h2>
 
         <motion.p
@@ -381,10 +371,10 @@ function ConclusionSection() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
           viewport={{ once: true, margin: "-100px" }}
-          className="text-xl text-zinc-300 mb-12"
+          className="text-xl text-zinc-300 max-w-3xl mx-auto mb-12"
         >
           Both JavaScript and TypeScript have their place in modern web development. The choice depends on your project
-          requirements, team expertise, and development goals.
+          size, team expertise, and specific requirements.
         </motion.p>
 
         <motion.div
@@ -392,55 +382,26 @@ function ConclusionSection() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
           viewport={{ once: true, margin: "-100px" }}
-          className="grid md:grid-cols-2 gap-8"
+          className="flex flex-col md:flex-row justify-center gap-6 mt-12"
         >
-          <div className="bg-zinc-800/50 backdrop-blur-sm p-6 rounded-xl border border-zinc-700 text-left">
-            <h3 className="text-2xl font-bold mb-4 text-yellow-400">Choose JavaScript if:</h3>
-            <ul className="space-y-3 text-zinc-300">
-              <li className="flex items-start">
-                <CheckCircle className="w-5 h-5 text-yellow-400 mr-2 mt-1 flex-shrink-0" />
-                <span>You&apos;re building a small, simple project</span>
-              </li>
-              <li className="flex items-start">
-                <CheckCircle className="w-5 h-5 text-yellow-400 mr-2 mt-1 flex-shrink-0" />
-                <span>You need rapid prototyping with minimal setup</span>
-              </li>
-              <li className="flex items-start">
-                <CheckCircle className="w-5 h-5 text-yellow-400 mr-2 mt-1 flex-shrink-0" />
-                <span>Your team is more familiar with JavaScript</span>
-              </li>
-            </ul>
-          </div>
-
-          <div className="bg-zinc-800/50 backdrop-blur-sm p-6 rounded-xl border border-zinc-700 text-left">
-            <h3 className="text-2xl font-bold mb-4 text-blue-500">Choose TypeScript if:</h3>
-            <ul className="space-y-3 text-zinc-300">
-              <li className="flex items-start">
-                <CheckCircle className="w-5 h-5 text-blue-500 mr-2 mt-1 flex-shrink-0" />
-                <span>You&apos;re building a large, complex application</span>
-              </li>
-              <li className="flex items-start">
-                <CheckCircle className="w-5 h-5 text-blue-500 mr-2 mt-1 flex-shrink-0" />
-                <span>You have a team working on the same codebase</span>
-              </li>
-              <li className="flex items-start">
-                <CheckCircle className="w-5 h-5 text-blue-500 mr-2 mt-1 flex-shrink-0" />
-                <span>You value long-term maintainability</span>
-              </li>
-            </ul>
-          </div>
+          <a
+            href="https://www.typescriptlang.org/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-6 rounded-lg transition-colors flex items-center justify-center"
+          >
+            <Code className="w-5 h-5 mr-2" />
+            Learn TypeScript
+          </a>
+          
+          <a
+            href="/typescript-demo"
+            className="bg-zinc-700 hover:bg-zinc-600 text-white font-medium py-3 px-6 rounded-lg transition-colors flex items-center justify-center"
+          >
+            <Shield className="w-5 h-5 mr-2" />
+            View TypeScript Demo
+          </a>
         </motion.div>
-
-        <motion.p
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.6 }}
-          viewport={{ once: true, margin: "-100px" }}
-          className="mt-12 text-zinc-400"
-        >
-          Remember, TypeScript compiles to JavaScript, so you can always start with JavaScript and gradually migrate to
-          TypeScript as your project grows.
-        </motion.p>
       </div>
     </section>
   )
